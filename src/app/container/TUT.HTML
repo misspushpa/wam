@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p> sum of all the numbr in the array</p>
+    <p id="demo"></p>
+    <script>
+          let number=[1,2,3,4];
+          let sum =0;
+          var array=[3,5,44,8,99];
+        var largest=0;
+          for (let i=0;i < number; i++){
+          sum +=number[i]
+
+          
+          }
+          const total=number.reduce((a , b) => a + b, 0)
+          const large= Math.max(...number)
+          
+          console.log(total)
+          console.log('large', large)
+          //console.log(sum);
+        document.getElementById("demo").innerHTML=sum;
+
+        
+        
+for(i=0;i<=largest;i++){
+    if (array<largest){
+            var largest=array[i]
+        }}
+        //console.log(largest);
+        document.getElementById("demo").innerHTML=largest;
+    </script>
+</body>
+</html>s

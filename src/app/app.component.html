@@ -1,0 +1,43 @@
+<App-container></App-container>
+
+<div *ngIf="courses.length > 0" >
+    <!--<div *ngif="dowehaveanycourses()" > -->
+list of courses
+</div>
+<div *ngIf="courses.length == 0"> No courses yet</div>
+
+<div>
+    <label>Choose the Role</label>
+<SELECT (change)="changeRoleId($event)" >
+    <option VALUE="1">CHOOSE ROLE</option>
+    <option VALUE="48">HoD</option>
+    <option value="49">HO</option>
+    <option value="81">Staff</option>
+</SELECT>
+</div>
+<div>
+    <label>Choose the level Id</label>
+<SELECT (change)="changeLevel($event)">
+    <option VALUE="100">CHOOSE the Level Id</option>
+    <option VALUE="1">Office</option>
+    <option value="2">Dept</option>
+</SELECT>
+</div>
+
+<div>
+    <label>Choose the Department</label>
+<SELECT>
+    <option VALUE="1">CHOOSE the Department</option>
+    <option VALUE="1">dep1</option>
+    <option value="2">dep2</option>
+</SELECT>
+</div>
+
+<div>
+    <label>Choose the Office</label>
+<SELECT>
+    <option VALUE="1">CHOOSE the Department</option>
+    <option VALUE="1">dep1</option>
+    <option value="2">dep2</option>
+</SELECT>
+</div>
